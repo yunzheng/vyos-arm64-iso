@@ -17,3 +17,7 @@ echo "./build.py > $logdir/$package.log"
 } || {
 	echo "FAILED :("
 }
+[ -x /scripts/build-hooks.d/post-$package.sh ] && {
+	echo "POST-HOOK /scripts/build-hooks.d/post-$package.sh"
+	/scripts/build-hooks.d/post-$package.sh
+}
