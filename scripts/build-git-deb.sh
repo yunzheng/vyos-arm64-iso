@@ -6,5 +6,6 @@ cd /vyos/scripts/package-build/git
 [ -d "$pkg" ] || git clone "https://github.com/vyos/$pkg"
 
 cd /vyos/scripts/package-build/git/$pkg
+sudo apt-get update
 sudo apt-get build-dep -y .
 dpkg-buildpackage -us -uc -b

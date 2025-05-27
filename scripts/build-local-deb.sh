@@ -11,6 +11,7 @@ echo "-------- BUILDING $package_dir ------"
 	echo "PRE-HOOK /scripts/build-hooks.d/pre-$package.sh"
 	/scripts/build-hooks.d/pre-$package.sh
 }
+sudo apt-get update
 echo "./build.py > $logdir/$package.log"
 ./build.py > "$logdir/$package.log" 2>&1 && {
 	echo "SUCCESS"
@@ -21,3 +22,4 @@ echo "./build.py > $logdir/$package.log"
 	echo "POST-HOOK /scripts/build-hooks.d/post-$package.sh"
 	/scripts/build-hooks.d/post-$package.sh
 }
+exit 0
