@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -a exclude_patterns=("*dbgsym*" "*xen-*" "*dropbear-initramfs*" "*wide-dhcpv6-relay*" "*wide-dhcpv6-server*")
+declare -a exclude_patterns=("*dbgsym*" "*xen-*" "*dropbear-initramfs*" "*wide-dhcpv6-relay*" "*wide-dhcpv6-server*" "*strongswan-charon*")
 
 # start with a clean packages dir
 find /vyos/packages -type l -name "*.deb" -delete
