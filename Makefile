@@ -1,5 +1,5 @@
 # Determined by checking the errors when building the iso
-GIT_PACKAGES := libvyosconfig vyatta-bash vyatta-biosdevname vyatta-cfg vyos-http-api-tools ipaddrcheck vyos-utils hvinfo udp-broadcast-relay
+GIT_PACKAGES := libvyosconfig vyatta-bash vyatta-biosdevname vyatta-cfg vyos-http-api-tools ipaddrcheck hvinfo udp-broadcast-relay
 
 # Created using dirlisting of vyos-build/scripts/package-build/
 ALL_PACKAGES := amazon-cloudwatch-agent amazon-ssm-agent aws-gwlbtun bash-completion blackbox_exporter ddclient dropbear \
